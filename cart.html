@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Your Cart</h1>
+        <a href="#" class="cart-link">Cart</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="cart-container">
+        <div class="cart-items">
+          <div class="cart-item">
+            <img
+            src="https://www.thrifted.com/cdn/shop/articles/427cee385f20d37057780975aa00228b_1024x.jpg?v=1721907216>
+            <div class="item-details">
+              <h2 class="item-name">Cool T-Shirt</h2>
+              <p class="item-size">Size: M</p>
+              <p class="item-price">$25.00</p>
+              <input type="number" class="item-quantity" value="1" />
+            </div>
+            <button class="remove-item">Remove</button>
+          </div>
+          <div class="cart-item">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Jeans"
+              class="item-image"
+            />
+            <div class="item-details">
+              <h2 class="item-name">Blue Jeans</h2>
+              <p class="item-size">Size: 32</p>
+              <p class="item-price">$40.00</p>
+              <input type="number" class="item-quantity" value="1" />
+            </div>
+            <button class="remove-item">Remove</button>
+          </div>
+        </div>
+
+        <div class="cart-summary">
+          <h2>Summary</h2>
+          <p>Total Items: <span id="total-items">2</span></p>
+          <p>Total Price: <span id="total-price">$65.00</span></p>
+          <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="flex-all-center">
+      <p>Copyright &copy; PrimeMart</p>
+    </footer>
+  </body>
+</html>
